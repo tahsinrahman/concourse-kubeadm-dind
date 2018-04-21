@@ -1,0 +1,13 @@
+resources:
+- name: repo
+  type: git
+  source:
+    uri: https://github.com/tahsinrahman/concourse-kubeadm-dind
+
+jobs:
+- name: test-kubeadm-dind
+  plan:
+  - get: repo
+    task: test
+    privileged: true
+    file: repo/task.yml
