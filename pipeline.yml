@@ -12,3 +12,5 @@ jobs:
   - task: test
     privileged: true
     file: repo/task.yml
+    params:
+      RUN_ON_BTRFS_ANYWAY: 1

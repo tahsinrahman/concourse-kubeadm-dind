@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -ex
+set -x
 
 source /docker-lib.sh
 start_docker
